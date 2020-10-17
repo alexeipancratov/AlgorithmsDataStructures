@@ -10,7 +10,7 @@ namespace AlgorithmsDataStructures.Sorting
             var random = new Random();
             for (int i = 0; i < elements.Length; i++)
             {
-                int index = random.Next(i + 1);
+                int index = random.Next(i + 1); // random between 0 and i provides the uniform randomness (0 to N on each iteration would be worse).
                 Exchange(elements, i, index);
             }
         }

@@ -2,6 +2,10 @@
 
 namespace AlgorithmsDataStructures.Sorting
 {
+    /// <summary>
+    /// Running time is insensitive to input. Even for sorted array is N^2/2
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class SelectionSort<T> : BaseSort<T>
         where T: IComparable<T>
     {

@@ -1,4 +1,4 @@
-﻿namespace UnionFind.Collections.Stacks
+﻿namespace AlgorithmsDataStructures.Collections.Stacks
 {
     public class FixedArrayStack : IStack
     {

@@ -1,7 +1,7 @@
 ﻿using UnionFind;
 using Xunit;
 
-namespace UnionFindTests
+namespace AlgorithmsDataStructures.Tests
 {
     public class QuickUnionWeightedTests
     {

@@ -1,7 +1,7 @@
 ﻿using UnionFind.Collections.Stacks;
 using Xunit;
 
-namespace UnionFindTests
+namespace AlgorithmsDataStructures.Tests
 {
     public class StackTests
     {

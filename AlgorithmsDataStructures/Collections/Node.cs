@@ -1,4 +1,4 @@
-﻿namespace UnionFind.Collections
+﻿namespace AlgorithmsDataStructures.Collections
 {
     internal class Node
     {

@@ -1,7 +1,7 @@
 ﻿using UnionFind.Collections.Queues;
 using Xunit;
 
-namespace UnionFindTests
+namespace AlgorithmsDataStructures.Tests
 {
     public class QueueTests
     {

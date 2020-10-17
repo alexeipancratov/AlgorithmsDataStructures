@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UnionFind.SearchAlgorithms
+namespace AlgorithmsDataStructures.SearchAlgorithms
 {
     public static class BinarySearch
     {

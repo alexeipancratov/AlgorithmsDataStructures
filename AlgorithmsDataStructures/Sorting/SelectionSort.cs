@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UnionFind.Sorting
+namespace AlgorithmsDataStructures.Sorting
 {
     public class SelectionSort<T> : BaseSort<T>
         where T: IComparable<T>

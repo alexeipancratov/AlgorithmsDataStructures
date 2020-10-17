@@ -2,7 +2,7 @@
 using UnionFind.Sorting;
 using Xunit;
 
-namespace UnionFindTests.Sorting
+namespace AlgorithmsDataStructures.Tests.Sorting
 {
     public class SortingTests
     {

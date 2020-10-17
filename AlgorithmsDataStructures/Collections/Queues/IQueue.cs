@@ -1,4 +1,4 @@
-﻿namespace UnionFind.Collections.Queues
+﻿namespace AlgorithmsDataStructures.Collections.Queues
 {
     public interface IQueue
     {

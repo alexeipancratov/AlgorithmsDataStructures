@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UnionFind.Collections.Queues
+namespace AlgorithmsDataStructures.Collections.Queues
 {
     public class LinkedQueue : IQueue
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UnionFind.Sorting
+namespace AlgorithmsDataStructures.Sorting
 {
     public abstract class BaseSort<T>
         where T: IComparable<T>

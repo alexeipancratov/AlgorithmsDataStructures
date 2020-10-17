@@ -1,4 +1,4 @@
-﻿namespace UnionFind
+﻿namespace AlgorithmsDataStructures
 {
     public class QuickUnion : IUnionFind
     {

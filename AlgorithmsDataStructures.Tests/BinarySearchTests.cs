@@ -1,7 +1,7 @@
 ﻿using UnionFind.SearchAlgorithms;
 using Xunit;
 
-namespace UnionFindTests
+namespace AlgorithmsDataStructures.Tests
 {
     public class BinarySearchTests
     {

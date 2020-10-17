@@ -1,4 +1,4 @@
-﻿namespace AlgorithmsDataStructures.Collections.Stacks
+﻿namespace AlgorithmsDataStructures.DataStructures.Stacks
 {
     public interface IStack
     {

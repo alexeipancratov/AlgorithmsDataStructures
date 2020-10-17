@@ -1,4 +1,4 @@
-using AlgorithmsDataStructures;
+using AlgorithmsDataStructures.SearchAlgorithms.UnionFind;
 using Xunit;
 
 namespace AlgorithmsDataStructures.Tests

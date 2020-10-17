@@ -1,4 +1,4 @@
-﻿namespace AlgorithmsDataStructures.Collections.Queues
+﻿namespace AlgorithmsDataStructures.DataStructures.Queues
 {
     public interface IQueue
     {

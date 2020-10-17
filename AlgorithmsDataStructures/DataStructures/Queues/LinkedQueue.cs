@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AlgorithmsDataStructures.Collections.Queues
+﻿namespace AlgorithmsDataStructures.DataStructures.Queues
 {
     public class LinkedQueue : IQueue
     {

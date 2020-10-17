@@ -1,4 +1,4 @@
-﻿namespace AlgorithmsDataStructures
+﻿namespace AlgorithmsDataStructures.SearchAlgorithms.UnionFind
 {
     public class QuickUnionWeightedPathCompression : IUnionFind
     {

@@ -1,4 +1,4 @@
-﻿namespace AlgorithmsDataStructures.Collections
+﻿namespace AlgorithmsDataStructures.DataStructures
 {
     internal class Node
     {

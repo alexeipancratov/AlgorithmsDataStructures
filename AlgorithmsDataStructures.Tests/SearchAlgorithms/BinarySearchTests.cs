@@ -1,7 +1,7 @@
 ﻿using AlgorithmsDataStructures.SearchAlgorithms;
 using Xunit;
 
-namespace AlgorithmsDataStructures.Tests
+namespace AlgorithmsDataStructures.Tests.SearchAlgorithms
 {
     public class BinarySearchTests
     {

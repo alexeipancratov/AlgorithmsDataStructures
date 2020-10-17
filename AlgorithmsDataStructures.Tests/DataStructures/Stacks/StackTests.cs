@@ -1,4 +1,4 @@
-﻿using AlgorithmsDataStructures.Collections.Stacks;
+﻿using AlgorithmsDataStructures.DataStructures.Stacks;
 using Xunit;
 
 namespace AlgorithmsDataStructures.Tests

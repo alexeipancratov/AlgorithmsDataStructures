@@ -1,4 +1,6 @@
-﻿namespace AlgorithmsDataStructures.Collections.Stacks
+﻿using AlgorithmsDataStructures.DataStructures.Stacks;
+
+namespace AlgorithmsDataStructures.Collections.Stacks
 {
     public class ResizableArrayStack : IStack
     {

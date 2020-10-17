@@ -1,7 +1,7 @@
 ﻿using AlgorithmsDataStructures.AlgorithmsAnalysis;
 using Xunit;
 
-namespace AlgorithmsDataStructures.Tests
+namespace AlgorithmsDataStructures.Tests.AlgorithmsAnalysis
 {
     public class SumTests
     {

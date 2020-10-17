@@ -1,4 +1,4 @@
-﻿using UnionFind.Collections.Queues;
+﻿using AlgorithmsDataStructures.Collections.Queues;
 using Xunit;
 
 namespace AlgorithmsDataStructures.Tests

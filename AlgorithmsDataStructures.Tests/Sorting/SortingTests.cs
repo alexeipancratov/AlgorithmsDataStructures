@@ -1,5 +1,5 @@
 ﻿using System;
-using UnionFind.Sorting;
+using AlgorithmsDataStructures.Sorting;
 using Xunit;
 
 namespace AlgorithmsDataStructures.Tests.Sorting

@@ -1,4 +1,4 @@
-﻿using UnionFind.Collections.Stacks;
+﻿using AlgorithmsDataStructures.Collections.Stacks;
 using Xunit;
 
 namespace AlgorithmsDataStructures.Tests

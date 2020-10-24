@@ -7,7 +7,7 @@ namespace AlgorithmsDataStructures.Sorting
     {
         public override void Sort(T[] elements)
         {
-            var random = new Random();
+            var random = new Random(); // you probably should choose some sophisticated seed value for more serious tasks.
             for (int i = 0; i < elements.Length; i++)
             {
                 int index = random.Next(i + 1); // random between 0 and i provides the uniform randomness (0 to N on each iteration would be worse).

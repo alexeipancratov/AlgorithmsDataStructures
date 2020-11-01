@@ -18,11 +18,21 @@ namespace AlgorithmsDataStructures.Tests.Sorting
         }
 
         [Fact]
-        public void Sort_Works()
+        public void MergeSort_Works()
         {
             var array = new char[] { 'M', 'E', 'R', 'G', 'E', 'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E' };
 
             new MergeSort<char>().Sort(array);
+
+            array.Should().BeInAscendingOrder();
+        }
+
+        [Fact]
+        public void MergeSortBottomUpSort_Works()
+        {
+            var array = new char[] { 'M', 'E', 'R', 'G', 'E', 'S' };
+
+            new MergeSortBottomUp<char>().Sort(array);
 
             array.Should().BeInAscendingOrder();
         }

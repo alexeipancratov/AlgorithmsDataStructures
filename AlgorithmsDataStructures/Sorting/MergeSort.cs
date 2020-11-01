@@ -10,6 +10,8 @@ namespace AlgorithmsDataStructures.Sorting
     public class MergeSort<T> : BaseSort<T>
         where T : IComparable<T>
     {
+        const int CUTOFF = 7;
+
         public override void Sort(T[] elements)
         {
             T[] auxiliary = new T[elements.Length];
@@ -18,14 +20,28 @@ namespace AlgorithmsDataStructures.Sorting
 
         private void Sort(T[] array, T[] auxiliary, int low, int high)
         {
-            if (high <= low)
+            // if (high <= low)
+            // {
+            //     return;
+            // }
+    
+            // We can improve the performance by using Insertion sort for tiny arrays (e.g. 7 items or less).
+            if (high <= low + CUTOFF - 1)
             {
+                new InsertionSort<T>().Sort(array);
                 return;
             }
             
             int middle = low + (high - low) / 2;
             Sort(array, auxiliary, low, middle);
             Sort(array, auxiliary, middle + 1, high);
+
+            // Another optimization. No need to merge if both halves are already sorted.
+            if (IsLess(array[middle], array[middle + 1]))
+            {
+                return;
+            }
+
             Merge(array, auxiliary, low, middle, high);
         }
 

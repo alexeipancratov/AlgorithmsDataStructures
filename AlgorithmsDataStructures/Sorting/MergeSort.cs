@@ -45,6 +45,7 @@ namespace AlgorithmsDataStructures.Sorting
             Merge(array, auxiliary, low, middle, high);
         }
 
+        // Mergesort is stable as long as the Merge operation is stable. Depends on its implementation.
         public static void Merge(T[] array, T[] auxiliary, int low, int middle, int high)
         {
             for (int k = 0; k < array.Length; k++)
@@ -71,6 +72,8 @@ namespace AlgorithmsDataStructures.Sorting
                 }
                 else
                 {
+                    // It's stable since if items are equal, we take item from the left-hand half of the array,
+                    // thus preserving the initial order.
                     array[k] = auxiliary[i++];
                 }
             }

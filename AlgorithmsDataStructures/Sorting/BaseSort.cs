@@ -9,7 +9,7 @@ namespace AlgorithmsDataStructures.Sorting
 
         protected static bool IsLess(T a, T b)
         {
-            return a.CompareTo(b) == -1;
+            return a.CompareTo(b) < 0;
         }
 
         protected static void Exchange(T[] elements, int firstIndex, int secondIndex)

@@ -1,0 +1,12 @@
+A stable sort preserves the relative order of items with equal keys.
+
+Stable sorting algs:
+	- insertion sort,
+	- merge sort
+
+Unstable sorting algs:
+	- selection sort,
+	- shellsort
+	
+It depends on equal vs. equal or less(greater than).
+If items with the same keys move past each other then it's unstable. Otherwise is stable.

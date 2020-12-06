@@ -3,7 +3,8 @@
 namespace AlgorithmsDataStructures.Sorting
 {
     /// <summary>
-    /// COmparing to MergeSort doesn't need an additional array.
+    /// Comparing to MergeSort doesn't need an additional array.
+    /// Is not stable, because of how partitioning works.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class QuickSort<T> : BaseSort<T>
@@ -11,12 +12,15 @@ namespace AlgorithmsDataStructures.Sorting
     {
         public override void Sort(T[] elements)
         {
-            new KnuthShuffle<T>().Sort(elements); // shuffle the elements for better performance.
+            KnuthShuffle<T>.Shuffle(elements); // shuffle the elements for better performance.
             Sort(elements, 0, elements.Length - 1);
         }
 
         private void Sort(T[] elements, int low, int high)
         {
+            // NOTE: As an improvement, we can use Insertion sort here for small arrays (~10 items).
+            // + the best choice of pivot item is the median (of 3). Once we find the median, we switch it with low.
+
             if (high <= low) return;
             int j = Partition(elements, low, high);
             Sort(elements, low, j - 1);
@@ -32,17 +36,17 @@ namespace AlgorithmsDataStructures.Sorting
         /// <param name="low"></param>
         /// <param name="high"></param>
         /// <returns>Returns index of an element known to be in place.</returns>
-        private int Partition(T[] elements, int low, int high)
+        private static int Partition(T[] elements, int low, int high)
         {
             int i = low, j = high + 1;
 
             while (true)
             {
-                while (true)
-                    if (!IsLess(elements[++i], elements[low])) break;
+                while (IsLess(elements[++i], elements[low]))
+                    if (i == high) break;
 
-                while (true)
-                    if (!IsLess(elements[low], elements[--j])) break;
+                while (IsLess(elements[low], elements[--j]))
+                    if (j == low) break;
 
                 if (i >= j) break;
 

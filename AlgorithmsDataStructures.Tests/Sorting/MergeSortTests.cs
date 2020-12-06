@@ -12,7 +12,7 @@ namespace AlgorithmsDataStructures.Tests.Sorting
             var array = new char[] { 'E', 'E', 'G', 'M', 'R', 'A', 'C', 'E', 'R', 'T' };
             var auxiliary = new char[array.Length];
 
-            MergeSort<char>.Merge(array, auxiliary, 0, 4, 9);
+            MergeSortBottomUp<char>.Merge(array, auxiliary, 0, 4, 9);
 
             array.Should().BeInAscendingOrder();
         }
@@ -22,7 +22,7 @@ namespace AlgorithmsDataStructures.Tests.Sorting
         {
             var array = new char[] { 'M', 'E', 'R', 'G', 'E', 'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E' };
 
-            new MergeSort<char>().Sort(array);
+            new MergeSortBottomUp<char>().Sort(array);
 
             array.Should().BeInAscendingOrder();
         }

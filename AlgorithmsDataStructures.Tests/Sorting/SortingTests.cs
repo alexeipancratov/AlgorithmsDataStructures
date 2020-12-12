@@ -54,6 +54,16 @@ namespace AlgorithmsDataStructures.Tests.Sorting
         }
 
         [Fact]
+        public void ThreeWayQuickSort_SortsIntsArray()
+        {
+            var elements = new char[] { 'P', 'A', 'B', 'X', 'W', 'P', 'P', 'V', 'P', 'D', 'P', 'C', 'Y', 'Z' };
+
+            new ThreeWayQuickSort<char>().Sort(elements);
+
+            Assert.Equal(new char[] { 'A', 'B', 'C', 'D', 'P', 'P', 'P', 'P', 'P', 'V', 'W', 'X', 'Y', 'Z' }, elements);
+        }
+
+        [Fact]
         public void Sort_SortsDatesArray()
         {
             var elements = new DateTime[] { new DateTime(2020, 02, 01), new DateTime(2019, 06, 01), new DateTime(2004, 07, 01) };
@@ -62,7 +72,5 @@ namespace AlgorithmsDataStructures.Tests.Sorting
 
             Assert.Equal(new DateTime[] { new DateTime(2004, 07, 01), new DateTime(2019, 06, 01), new DateTime(2020, 02, 01) }, elements);
         }
-
-        
     }
 }

@@ -4,6 +4,9 @@ namespace AlgorithmsDataStructures.Sorting
 {
     /// <summary>
     /// lgN passes, each pass is about N compares. NlgN in total.
+    /// Is used in Java (Arrays.sort) for arrays with objects
+    /// (because the idea is that most probably you don't care about the extra space used by MergeSort).
+    /// For primitive types - QuickSort is used since the idea is that most probably you care about perf.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class MergeSortBottomUp<T> : BaseSort<T>

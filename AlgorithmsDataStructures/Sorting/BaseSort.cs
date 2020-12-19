@@ -3,7 +3,7 @@
 namespace AlgorithmsDataStructures.Sorting
 {
     public abstract class BaseSort<T>
-        where T: IComparable<T>
+        where T : IComparable<T>
     {
         public abstract void Sort(T[] elements);
 

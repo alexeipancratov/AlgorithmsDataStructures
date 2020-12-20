@@ -10,7 +10,7 @@ namespace AlgorithmsDataStructures.DataStructures.PriorityQueues
     /// Takes M * N (N - number of analyzed elements). We want this to take logN.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class UnorderedMaxPriorityQueue<T> : IMaxPriorityQueue<T>
+    public class UnorderedMaxPriorityQueue<T> : BaseMaxPriorityQueue<T>, IMaxPriorityQueue<T>
         where T : IComparable<T>
     {
         private readonly T[] _elements;
@@ -47,18 +47,6 @@ namespace AlgorithmsDataStructures.DataStructures.PriorityQueues
         public bool IsEmpty()
         {
             return _numberOfElements == 0;
-        }
-
-        protected static bool IsLess(T a, T b)
-        {
-            return a.CompareTo(b) < 0;
-        }
-
-        protected static void Exchange(T[] elements, int firstIndex, int secondIndex)
-        {
-            T temp = elements[firstIndex];
-            elements[firstIndex] = elements[secondIndex];
-            elements[secondIndex] = temp;
         }
     }
 }

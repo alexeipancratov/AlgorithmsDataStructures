@@ -5,6 +5,9 @@ namespace AlgorithmsDataStructures.Sorting
     /// <summary>
     /// Comparing to MergeSort doesn't need an additional array.
     /// Is not stable, because of how partitioning works.
+    /// 
+    /// May take quadratic time in the worst case, but we make that unlikely
+    /// by random shuffling.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class QuickSort<T> : BaseSort<T>

@@ -22,14 +22,13 @@ namespace EventDrivenSimulation
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const int numberOfPoints = 10;
+        private const int numberOfPoints = 50;
         private Ball[] _balls = new Ball[numberOfPoints];
         private Random _random = new Random();
 
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         protected override void OnContentRendered(EventArgs e)
@@ -45,11 +44,6 @@ namespace EventDrivenSimulation
             {
                 _balls[i] = new Ball
                 {
-                    Ellipse = new Ellipse
-                    {
-                        Stroke = Brushes.Black,
-                        StrokeThickness = 5
-                    },
                     PositionX = _random.Next((int)canvas.ActualWidth),
                     PositionY = _random.Next((int)canvas.ActualHeight)
                 };
@@ -70,7 +64,7 @@ namespace EventDrivenSimulation
             {
                 for (int i = 0; i < numberOfPoints; i++)
                 {
-                    _balls[i].Move(0.3);
+                    _balls[i].Move(0.5);
 
                     Dispatcher.Invoke(() =>
                     {
@@ -79,7 +73,7 @@ namespace EventDrivenSimulation
                     }, DispatcherPriority.Normal);
                 }
 
-                Thread.Sleep(250);
+                Thread.Sleep(10);
             }
         }
     }
